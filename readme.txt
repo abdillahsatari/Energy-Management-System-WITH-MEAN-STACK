@@ -1,16 +1,12 @@
+//for backend service
 coreadmin-backend:
 
 nodemon server.js (untuk running server)
-
 cd public 
 
-http-server -o (untuk jalankan angular dalam mode server)
-
-
-
+//for frontend or UI/UX
 coreadmin-frontend:
 
-
 ng build --prod
-
-ng serve (untuk serve aplikasi)
+ng serve (test runningn app in localhost)
+http-server -o (test running app in virtual server)
