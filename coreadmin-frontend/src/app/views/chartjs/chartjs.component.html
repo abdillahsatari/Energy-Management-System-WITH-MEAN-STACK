@@ -1,0 +1,279 @@
+<div class="animated fadeIn">
+  <div class="card-columns cols-2">
+    <div class="card">
+      <div class="card-header">
+        Ground Floor
+        <div class="card-header-actions">
+          <a href="http://www.chartjs.org">
+            <small class="text-muted">docs</small>
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="chart-wrapper">
+          <canvas baseChart class="chart"
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="row text-center">
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Hari Ini</div>
+            <strong>24.093 Volt (20%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Minggu Ini</div>
+            <strong>29.703 Volt (40%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Bulan Ini</div>
+            <strong>78.706 Volt (60%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Tahun Ini</div>
+            <strong>22.123 Volt (80%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        2 nd Floor
+        <div class="card-header-actions">
+          <a href="http://www.chartjs.org">
+            <small class="text-muted">docs</small>
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="chart-wrapper">
+          <canvas baseChart class="chart"
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="row text-center">
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Hari Ini</div>
+            <strong>24.093 Volt (20%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Minggu Ini</div>
+            <strong>29.703 Volt (40%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Bulan Ini</div>
+            <strong>78.706 Volt (60%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Tahun Ini</div>
+            <strong>22.123 Volt (80%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        1 st Floor
+        <div class="card-header-actions">
+          <a href="http://www.chartjs.org">
+            <small class="text-muted">docs</small>
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="chart-wrapper">
+          <canvas baseChart class="chart"
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="row text-center">
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Hari Ini</div>
+            <strong>24.093 Volt (20%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Minggu Ini</div>
+            <strong>29.703 Volt (40%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Bulan Ini</div>
+            <strong>78.706 Volt (60%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Tahun Ini</div>
+            <strong>22.123 Volt (80%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        3 rd Floor
+        <div class="card-header-actions">
+          <a href="http://www.chartjs.org">
+            <small class="text-muted">docs</small>
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="chart-wrapper">
+          <canvas baseChart class="chart"
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="row text-center">
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Hari Ini</div>
+            <strong>24.093 Volt (20%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Minggu Ini</div>
+            <strong>29.703 Volt (40%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Bulan Ini</div>
+            <strong>78.706 Volt (60%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Tahun Ini</div>
+            <strong>22.123 Volt (80%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- <div class="card">
+      <div class="card-header">
+          Polar Area Chart
+          <div class="card-header-actions">
+            <a href="http://www.chartjs.org">
+              <small class="text-muted">docs</small>
+            </a>
+          </div>
+        </div>
+         <div class="card-body">
+          <div class="chart-wrapper">
+             <canvas baseChart class="chart"
+                [datasets]="mainChartData"
+                [labels]="mainChartLabels"
+                [options]="mainChartOptions"
+                [colors]="mainChartColours"
+                [legend]="mainChartLegend"
+                [chartType]="mainChartType">  
+              </canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+        <div class="row text-center">
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Hari Ini</div>
+            <strong>24.093 Volt (20%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Minggu Ini</div>
+            <strong>29.703 Volt (40%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Bulan Ini</div>
+            <strong>78.706 Volt (60%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md mb-sm-2 mb-0">
+            <div class="text-muted">Penggunaan Tahun Ini</div>
+            <strong>22.123 Volt (80%)</strong>
+            <div class="progress progress-xs mt-2">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

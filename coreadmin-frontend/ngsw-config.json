@@ -1,0 +1,21 @@
+{
+  "index": "/index.html",
+  "appData": {
+    "test": true
+  },
+  "assetGroups": [{
+    "name": "app",
+    "installMode": "prefetch",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/favicon.ico",
+        "/manifest.json",
+        "/index.html",
+        "/*.css",
+        "/*.js",
+        "/*.svg"
+      ]
+    }
+  }]
+}

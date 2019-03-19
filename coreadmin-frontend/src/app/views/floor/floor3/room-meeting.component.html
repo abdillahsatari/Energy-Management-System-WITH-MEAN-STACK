@@ -1,0 +1,115 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          3F / Meeeting Room
+          <div class="btn-group float-right" dropdown placement="bottom left">
+            <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+              Floor <span class="caret"></span>
+            </button>
+            <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu" >
+              <li role="menuitem"><a class="dropdown-item" href="/#/floor3">Main Floor</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="/#/dashboard">Main Building</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+        	<div class="row">
+	        	<div class="col-sm-12 col-md-18"> 
+        	    	<svg version="1.1" viewBox="-50 20 350 120" xmlns="http://www.w3.org/2000/svg">
+                <path d="M80 25 170 25, 170 109, 160 109, 170 117, 160 125, 170 125, 170 135, 80 135, z" />
+                <g id="lampOne" (click)="activateItem(0, 'lampOne')">
+                  <path d="M90 40 h25 v2 h-25 z M90 42 v2 h25 v-2 "/>
+                  <path d="M135 77 h25 v2 h-25 z M135 79 v2 h25 v-2 "/>
+                  <path d="M90 115 h25 v2 h-25 z M90 117 v2 h25 v-2 "/>
+                </g>
+                <g id="lampTwo" (click)="activateItem(1, 'lampTwo')">
+                  <path d="M135 40 h25 v2 h-25 z M135 42 v2 h25 v-2 "/>
+                  <path d="M90 77 h25 v2 h-25 z M90 79 v2 h25 v-2 "/>
+                  <path d="M135 115 h25 v2 h-25 z M135 117 v2 h25 v-2 "/>
+                </g>
+                <rect id="ac" (click)="activateItem(2, 'ac')" x="115" y="50" height="20" width="20" rx="5" ry="5"/>
+        	    	</svg>
+            	</div>
+        	</div>
+        </div>
+      </div>
+      <!--/col-md-12-->
+     	<div class="row">
+     	  <div class="col-md-12">
+     	    <div class="card">
+     	      <div class="card-header">
+     	        <i class="fa fa-align-justify"></i> Last Activity
+     	      </div>
+     	      <div class="card-body container" style="overflow-x:auto;">
+     	        
+              <table class="table table-bordered table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>Date / Lamp Id</th>
+                    <th>00101001</th>
+                    <th>00101002</th>
+                    <th>00101003</th>
+                    <th>00101004</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2018/07/20</td>
+                    <td>09:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2018/07/19</td>
+                    <td></td>
+                    <td>09:00</td>
+                    <td>14:00</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2018/07/18</td>
+                    <td>09:00</td>
+                    <td></td>
+                    <td>07:00</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2018/07/17</td>
+                    <td></td>
+                    <td>18:00</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2018/07/16</td>
+                    <td></td>
+                    <td>08:00</td>
+                    <td></td>
+                    <td>09:00</td>
+                  </tr>
+                </tbody>
+              </table>
+     	        <nav>
+     	          <ul class="pagination">
+     	            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+     	            <li class="page-item active">
+     	              <a class="page-link" href="#">1</a>
+     	            </li>
+     	            <li class="page-item"><a class="page-link" href="#">2</a></li>
+     	            <li class="page-item"><a class="page-link" href="#">3</a></li>
+     	            <li class="page-item"><a class="page-link" href="#">4</a></li>
+     	            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+     	          </ul>
+     	        </nav>
+     	      </div>
+     	    </div>
+     	  </div>
+      </div>
+      <!--/col-md-12-->
+    </div>
+  </div>
+</div>
+

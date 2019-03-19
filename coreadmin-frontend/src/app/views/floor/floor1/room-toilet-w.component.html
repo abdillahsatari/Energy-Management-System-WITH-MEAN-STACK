@@ -1,0 +1,116 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          3F / Toilet Woman
+          <div class="btn-group float-right" dropdown placement="bottom left">
+            <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+              Floor <span class="caret"></span>
+            </button>
+            <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu" >
+              <li role="menuitem"><a class="dropdown-item" href="/#/floor3">Main Floor</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="/#/dashboard">Main Building</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+	           <div class="col-sm-12 col-md-18"> 
+        	    	<svg version="1.1" viewBox="-50 20 350 120" xmlns="http://www.w3.org/2000/svg">
+                   
+                <path d="M80 25 150 25, 150 135, 150 105, 125 105, M80 25 80 135, 125 135, 125 120, 115 120, 125 110, 125 105," />
+                <path d="M80 85 h12 v50 h-12 z" />
+                <path d="M115 45 150 45" />
+                <path d="M115 65 150 65" />
+                <path d="M115 85 150 85" />
+                <path d="M115 105 150 105" />
+                <g id="lampOne" (click)="activateItem(0, 'lampOne')">
+                  <circle cx="132" cy="35" r="4" />
+                  <circle cx="132" cy="55" r="4" />
+                  <circle cx="132" cy="75" r="4" />
+                  <circle cx="132" cy="95" r="4" />
+                </g>
+                <g id="lampTwo" (click)="activateItem(1, 'lampTwo')">
+                  <circle cx="105" cy="35" r="4" />
+                  <circle cx="105" cy="55" r="4" />
+                  <circle cx="105" cy="75" r="4" />
+                  <circle cx="105" cy="95" r="4" />
+                </g>
+                </svg>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-align-justify"></i> Last Activity
+            </div>
+            <div class="card-body container" style="overflow-x:auto;">
+              <table class="table table-bordered table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>Lamp Id</th>
+                    <th>Date</th>
+                    <th>Set time</th>
+                    <th>Off time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>00101001</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td>06:00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00101001</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td></td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00101002</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td>07:00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00101002</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td></td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00102001</td>
+                    <td>2018/07/16</td>
+                    <td>08:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

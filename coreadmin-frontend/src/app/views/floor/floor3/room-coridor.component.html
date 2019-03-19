@@ -1,0 +1,145 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          3F / Coridor
+          <div class="btn-group float-right" dropdown placement="bottom left">
+            <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+              Floor <span class="caret"></span>
+            </button>
+            <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu" >
+              <!-- href="/#/floor/floor3" -->
+              <!-- (click)="mainFloor()" -->
+              <li role="menuitem" class="dropdown-item" (click)="mainFloor()">Main Floor</li>
+              <li role="menuitem"><a class="dropdown-item" href="/#/dashboard">Main Building</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+	           <div class="col-sm-12 col-md-18"> 
+        	    	<svg version="1.1" viewBox="-50 20 350 120" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M60 40 210 40, 210 30, 240 30, 240 40, 220 40, 220 50, 210 50, 210 110, 50 110, 50 100, 60 100, 60 80, 35 80, 35 90, 23 90, 23 80, 20 80, 20 70, 23 70, 23 60, 35 60, 35 70, 60 70, z"/>
+
+                 <path d="M80 58 h110 v35 h-110 v-35" fill="#eaeeef" />
+                 <rect class="strokeLess"x="174" y="60" height="14" width="14" rx="5" ry="5"/>
+                 <rect  class="strokeLess" x="174" y="76" height="14" width="14" rx="5" ry="5"/>
+                 <rect  class="strokeLess" x="80" y="68" height="16" width="30"/>
+
+                 <g id="lampOne" (click)="activateItem(0, 'lampOne')">
+                  <circle class="strokeLess" cx="70" cy="75" r="3" />
+                  <circle class="strokeLess" cx="70" cy="48" r="3" />
+                  <circle class="strokeLess" cx="97" cy="48" r="3" />
+                  <circle class="strokeLess" cx="127" cy="48" r="3" />
+                  <circle class="strokeLess" cx="157" cy="48" r="3" />
+                  <circle class="strokeLess" cx="187" cy="48" r="3" />   
+                 </g>
+                 <g id="lampTwo" (click)="activateItem(1, 'lampTwo')">
+                  <circle class="strokeLess" cx="70" cy="88" r="3" />
+                  <circle class="strokeLess" cx="70" cy="62" r="3" />
+                  <circle class="strokeLess" cx="83" cy="48" r="3" />
+                  <circle class="strokeLess" cx="112" cy="48" r="3" />
+                  <circle class="strokeLess" cx="142" cy="48" r="3" />
+                  <circle class="strokeLess" cx="173" cy="48" r="3" />
+                  <circle class="strokeLess" cx="201" cy="48" r="3" />    
+                 </g>
+                 <g id="lampThree" (click)="activateItem(2, 'lampThree')">
+                  <circle class="strokeLess" cx="201" cy="75" r="3" />
+                  <circle class="strokeLess" cx="201" cy="102" r="3" />
+                  <circle class="strokeLess" cx="83" cy="102" r="3" />
+                  <circle class="strokeLess" cx="112" cy="102" r="3" />
+                  <circle class="strokeLess" cx="142" cy="102" r="3" />
+                  <circle class="strokeLess" cx="173" cy="102" r="3" />
+                  <circle class="strokeLess" cx="201" cy="102" r="3" />
+                 </g>
+                 <g id="lampFour" (click)="activateItem(3, 'lampFour')">
+                  <circle class="strokeLess" cx="201" cy="62" r="3" />
+                  <circle class="strokeLess" cx="201" cy="87" r="3" />
+                   <circle class="strokeLess" cx="70" cy="102" r="3" />
+                   <circle class="strokeLess" cx="97" cy="102" r="3" />
+                   <circle class="strokeLess" cx="127" cy="102" r="3" />
+                   <circle class="strokeLess" cx="157" cy="102" r="3" />
+                   <circle class="strokeLess" cx="187" cy="102" r="3" />   
+                 </g>
+                 <g id="lampFive" (click)="activateItem(4, 'lampFive')">
+                  <circle class="strokeLess" cx="29" cy="65" r="3" />
+                  <circle class="strokeLess" cx="29" cy="85" r="3" />
+                 </g>
+        	     </svg>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-align-justify"></i> Last Activity
+            </div>
+            <div class="card-body container" style="overflow-x:auto;">
+              <table class="table table-bordered table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>Lamp Id</th>
+                    <th>Date</th>
+                    <th>Set time</th>
+                    <th>Off time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>00101001</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td>06:00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00101001</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td></td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00101002</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td>07:00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00101002</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td></td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00102001</td>
+                    <td>2018/07/16</td>
+                    <td>08:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

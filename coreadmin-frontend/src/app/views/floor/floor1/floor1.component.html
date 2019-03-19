@@ -1,0 +1,187 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          1 st Floor
+          <div class="btn-group float-right" dropdown placement="bottom left">
+            <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+              Floor <span class="caret"></span>
+            </button>
+              <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu" >
+              <li role="menuitem"><a class="dropdown-item" href="#">Ground Floor</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="/floor2">2 nd Floor</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="/floor3">3 rd Floor</a></li>
+  
+              <li class="divider dropdown-divider"></li>
+              <li role="menuitem"><a class="dropdown-item" href="/#/dashboard">Main Building</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-18">
+              <svg version="1.1" viewBox="-50 9 350 132" xmlns="http://www.w3.org/2000/svg">
+                 <a id="toiletW" (click)="chosenRoom('/floor1/room-toilet-w/toilet_female')">
+                   <path stroke="#0cf9be" stroke-width="1" d="M10 40 v30 h20 v-30 h-20"/>
+                 </a>
+                 <a id="toiletM" (click)="chosenRoom('/floor1/room-toilet-m/toilet_male')">
+                   <path stroke="#0cf9be" stroke-width="1" d="M10 80 v30 h20 v-30 h-20" />
+                 </a>    
+                 <!--meeting room-->
+                 <a id="meetRoomA" (click)="chosenRoom('/floor1/room-staffdiv-4/staff_of_div_4')">
+                   <path stroke="#0cf9be" stroke-width="1" d="M30 30 h30 v40 h-30 v-40" />
+                 </a>
+                 <a id="musollah" (click)="chosenRoom('/floor1/room-mushollah/musholla')">
+                   <path stroke="#0cf9be" stroke-width="1" d="M30 80 h30 v40 h-30 v-40" />
+                 </a>
+                 <!--room upside-->
+                 <a id="staffOfDiv2" (click)="chosenRoom('/floor1/room-staffdiv-2/staff_of_div_2')">
+                   <path stroke="#0cf9be" stroke-width="1"  d="M60 10 h30 v30 h-30 z" />
+                 </a>
+                 <a id="staffOfDiv3" (click)="chosenRoom('/floor1/room-staffdiv-3/staff_of_div_3')">
+                   <path stroke="#0cf9be" stroke-width="1"  d="M90 10 h30 v30 h-30 z" />
+                 </a>  
+
+                 <a id="cotLounge">
+                   <path stroke="#0cf9be" stroke-width="1" d="M120 10 h30 v30 v-30" />
+                 </a>
+                 <a id="staffOfDiv1" (click)="chosenRoom('/floor1/room-staffdiv-1/staff_of_div_1')">
+                   <path stroke="#0cf9be" stroke-width="1" d="M150 10 h30 v30 h-30 v-30" />
+                 </a>
+                 <a id="directorOfCot" (click)="chosenRoom('/floor1/room-director-cot/director_of_cot')">
+                   <path stroke="#0cf9be" stroke-width="1" d="M180 10 h30 v30 h-30 v-30" />
+                 </a>
+
+                 <!--room downside-->
+                 <a id="viceDirector4" (click)="chosenRoom('/floor1/room-vicedir-4/vice_director_4')">
+                   <path stroke="#0cf9be" stroke-width="1" d="M60 110 h30 v30 h-30 v-30" />
+                 </a> 
+                 <a id="viceDirector3" (click)="chosenRoom('/floor1/room-vicedir-3/vice_director_3')">
+                   <path stroke="#0cf9be" stroke-width="1" d="M90 110 h30 v30 h-30 v-30" />
+                 </a>
+                 <!-- remove this one -->
+                 <a id="pedestrian_door">
+                     <path stroke="#0cf9be" stroke-width="1" d="M120 126 h30" />
+                   </a>
+                 <a id="viceDirector2" (click)="chosenRoom('/floor1/room-vicedir-2/vice_director_2')">
+                     <path stroke="#0cf9be" stroke-width="1" d="M150 110 h30 v30 h-30 v-30" />
+                   </a>
+                 <a id="viceDirector1" (click)="chosenRoom('/floor1/room-vicedir-1/vice_director_1')">
+                     <path stroke="#0cf9be" stroke-width="1" d="M180 110 h30 v30 h-30 v-30" />
+                   </a>
+                  
+                 <!--hall-->
+                   <a id="glassRoom" (click)="chosenRoom('/floor1/room-showcase/hall_room_glass')" >
+                   <path stroke="#0cf9be" stroke-width="1" d="M240 40 v10 l-20 25 l20 25 v20 h-30 v-70 h10 v-10 h20" />
+                  </a>
+                 <!--void-->
+                  <a id="hallRoom" (click)="chosenRoom('/floor1/room-hall/hall_room')" >
+                  <path stroke="#0be07c" stroke-width="1" d="M240 50 l10 -12 l30 38 l-30 36 l-30 -37 l30 -37" />
+                 </a>
+
+                 <!--koridor-->
+                  <a id="coridor" (click)="chosenRoom('/floor1/coridor/coridor')">
+                    <path stroke="#006ebc" stroke-width="6" d="M20 70 v10 h40 v30 h60 v17 h30 v-17 h60 v-60 h10 v-10 h20 v-10 h-30 v10 h-60 v-30 h-30 v30 h-60 v30 h-40" />
+                  </a>
+
+                 <!--space-->
+                 <path stroke="#0cf9be" stroke-width="1" d="M80 58 h110 v35 h-110 v-35" fill="#eaeeef" />
+
+                  <text x="15" y="57" font-family="sans-serif" font-size="30%" fill="#006ebc">Toilet</text>
+                  <text x="15" y="97" font-family="sans-serif" font-size="30%" fill="#006ebc">Toilet</text>
+                  <text x="42" y="52" font-family="sans-serif" font-size="28%" fill="#006ebc">DTI</text>
+                  <text x="37" y="103" font-family="sans-serif" font-size="28%" fill="#006ebc">Musollah</text>
+                  <text x="69" y="27" font-family="sans-serif" font-size="28%" fill="#006ebc">CO-1F-7</text>
+                  <text x="95" y="27" font-family="sans-serif" font-size="28%" fill="#006ebc">Verification</text>
+                  <text x="124" y="27" font-family="sans-serif" font-size="28%" fill="#006ebc">COT Lounge</text>
+                  <text x="157" y="27" font-family="sans-serif" font-size="28%" fill="#006ebc">CO-1F-10</text>
+                  <text x="187" y="27" font-family="sans-serif" font-size="26%" fill="#006ebc">CO-1F-11</text>
+                  <text x="67" y="127" font-family="sans-serif" font-size="28%" fill="#006ebc">CO-1F-5</text>
+                  <text x="97" y="127" font-family="sans-serif" font-size="28%" fill="#006ebc">CO-1F-4</text>
+                  <text x="158" y="127" font-family="sans-serif" font-size="28%" fill="#006ebc">CO-1F-3</text>
+                  <text x="187" y="127" font-family="sans-serif" font-size="28%" fill="#006ebc">CO-1F-2</text>
+                  <text x="220" y="105" font-family="sans-serif" font-size="35%" fill="#006ebc">Hall</text>
+                  <text x="125" y="77" font-family="sans-serif" font-size="35%" fill="#006ebc">Coridor</text>
+                  <text x="239" y="77" font-family="sans-serif" font-size="35%" fill="#006ebc">Show Case</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/col-md-12-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-align-justify"></i> Last Activity
+            </div>
+            <div class="card-body container" style="overflow-x:auto;">
+              
+              <table class="table table-bordered table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>Date / Lamp Id</th>
+                    <th>00101001</th>
+                    <th>00101002</th>
+                    <th>00101003</th>
+                    <th>00101004</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2018/07/20</td>
+                    <td>09:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2018/07/19</td>
+                    <td></td>
+                    <td>09:00</td>
+                    <td>14:00</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2018/07/18</td>
+                    <td>09:00</td>
+                    <td></td>
+                    <td>07:00</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2018/07/17</td>
+                    <td></td>
+                    <td>18:00</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2018/07/16</td>
+                    <td></td>
+                    <td>08:00</td>
+                    <td></td>
+                    <td>09:00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav>
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>

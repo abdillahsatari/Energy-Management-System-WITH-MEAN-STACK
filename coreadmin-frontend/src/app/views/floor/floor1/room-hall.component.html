@@ -1,0 +1,122 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          3F / Hall Room
+          <div class="btn-group float-right" dropdown placement="bottom left">
+            <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+              Floor <span class="caret"></span>
+            </button>
+            <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu" >
+              <li role="menuitem"><a class="dropdown-item" href="/#/floor3">Main Floor</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="/#/dashboard">Main Building</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+	           <div class="col-sm-12 col-md-18">    
+        	    	<svg version="1.1" viewBox="-50 20 350 130" xmlns="http://www.w3.org/2000/svg">
+                   <rect id = "myRect" x = "105" y = "-75" height = "90" width = "90" transform="rotate(45)" />
+                   <g id="lampOne" (click)="activateItem(0, 'lampOne')">
+                     <circle cx="178" cy="85" r="4" />
+                     <circle cx="78" cy="85" r="4" />
+                     <circle cx="127" cy="135" r="4" />
+                     <circle cx="127" cy="35" r="4" />
+                   </g>
+                   <g id="lampTwo" (click)="activateItem(1, 'lampTwo')">
+                     <circle cx="162" cy="68" r="4" />
+                     <circle cx="145" cy="51" r="4" />
+                     <circle cx="110" cy="51" r="4" />
+                     <circle cx="93" cy="68" r="4" />
+                     <circle cx="93" cy="100" r="4" />
+                     <circle cx="110" cy="117" r="4" />
+                     <circle cx="145" cy="117" r="4" />
+                     <circle cx="162" cy="100" r="4" />
+                   </g>
+                   <!-- (click)="acActive()" -->
+                   <g id="ac" (click)="activateItem(2, 'ac')">
+                     <rect x="111" y="68" height="16" width="16" rx="1" ry="1"/>
+                     <rect x="131" y="68" height="16" width="16" rx="1" ry="1"/>
+                     <rect x="111" y="88" height="16" width="16" rx="1" ry="1"/>
+                     <rect x="131" y="88" height="16" width="16" rx="1" ry="1"/>
+                   </g>          
+        	     </svg>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-align-justify"></i> Last Activity
+            </div>
+            <div class="card-body container" style="overflow-x:auto;">
+              <table class="table table-bordered table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>Lamp Id</th>
+                    <th>Date</th>
+                    <th>Set time</th>
+                    <th>Off time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>00101001</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td>06:00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00101001</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td></td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00101002</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td>07:00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00101002</td>
+                    <td>2018/07/16</td>
+                    <td>18:00</td>
+                    <td></td>
+                    <td>
+                      <span class="badge badge-success">Active</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00102001</td>
+                    <td>2018/07/16</td>
+                    <td>08:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <span class="badge badge-secondary">Inactive</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

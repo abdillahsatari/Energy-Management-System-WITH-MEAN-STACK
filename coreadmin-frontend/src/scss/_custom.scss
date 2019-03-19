@@ -1,0 +1,71 @@
+// Here you can add other styles
+mapdiv{
+	width: 100%;
+	height:100%;
+	margin:auto;
+	
+}
+svg{
+	fill:#eaeeef;
+}
+a{
+	fill:#eaeeef;
+}
+a:hover {
+ 	transition: fill 0.3s;
+    fill: #f4f968;
+}
+path{
+	stroke:#0cf9be;
+	stroke-width:1;
+}
+rect{
+	stroke:#0cf9be;
+	stroke-width:1;
+}
+circle{
+	stroke:#0cf9be;
+}
+
+.str5 {stroke:#29BAA5;stroke-width:11.111}
+.str2 {stroke:#29BAA5;stroke-width:4.16654}
+.str6 {stroke:#29BAA5;stroke-width:3.47205}
+.str3 {stroke:#29BAA5;stroke-width:2.77756}
+.str0 {stroke:#29BAA5;stroke-width:2.08307}
+.str9 {stroke:#29BAA5;stroke-width:2.08307}
+.str7 {stroke:#29BAA5;stroke-width:8.33307}
+.str1 {stroke:#29BAA5;stroke-width:1.38858}
+.str10 {stroke:#29BAA5;stroke-width:1.38858}
+.str4 {stroke:#29BAA5;stroke-width:0.694488}
+.str8 {stroke:#29BAA5;stroke-width:6.94409}
+
+.lampTwo{
+	fill:none;
+}
+
+#lampOne.active{
+	fill:yellow;
+}
+#lampOne.activeLamp1{
+	fill:yellow;
+}
+#lampTwo.active{
+	fill:yellow;
+}
+#lampThree.active{
+	fill:yellow;
+}
+#lampFour.active{
+	fill:yellow;
+}
+#lampFive.active{
+	fill:yellow;
+}
+#ac.active{
+	fill:yellow;
+}
+#external_ac.active{
+	fill:yellow;
+}
+
+
