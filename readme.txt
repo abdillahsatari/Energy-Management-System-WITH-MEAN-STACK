@@ -1,3 +1,6 @@
+
+>> My research project uses angular 6 as the frontend and express.js as the backend <<
+
 //for backend service
 coreadmin-backend:
 
