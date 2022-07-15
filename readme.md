@@ -7,7 +7,7 @@
 
 ## About This Repo ##
 
->> This project is a research project as a graduation requirement in obtaining my bachelor's degree. This application integrated with <<
+>> This project is a research project as a graduation requirement in obtaining my bachelor's degree. This application integrated with thingspeak so the system can read the data and make action to ligth switch.
 
 ### Environments Set Up
 
